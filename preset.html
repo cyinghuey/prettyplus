@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preset Pack | YourBrand</title>
+  <meta name="description" content="See the before and after of this Lightroom preset pack, then buy instantly.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">YourBrand</a>
+  <nav>
+    <a href="index.html#presets">Presets</a>
+    <a href="prompts.html">Prompts</a>
+    <a href="index.html#free">Free preset</a>
+  </nav>
+</header>
+
+<main class="product">
+
+  <!-- The pack name is filled in by script.js from the ?pack= URL value -->
+  <h1 id="pack-title">Preset Pack</h1>
+
+  <!-- Before / after slider: drag the handle to compare -->
+  <div class="compare" id="compare-1">
+    <img class="after" src="images/moody-after-1.jpg" alt="After applying the preset">
+    <div class="before-wrap">
+      <img class="before" src="images/moody-before-1.jpg" alt="Original photo before editing">
+    </div>
+    <input type="range" min="0" max="100" value="50" class="handle" aria-label="Compare before and after">
+    <span class="label label-before">Before</span>
+    <span class="label label-after">After</span>
+  </div>
+
+  <div class="compare" id="compare-2">
+    <img class="after" src="images/moody-after-2.jpg" alt="After applying the preset">
+    <div class="before-wrap">
+      <img class="before" src="images/moody-before-2.jpg" alt="Original photo before editing">
+    </div>
+    <input type="range" min="0" max="100" value="50" class="handle" aria-label="Compare before and after">
+    <span class="label label-before">Before</span>
+    <span class="label label-after">After</span>
+  </div>
+
+  <div class="compare" id="compare-3">
+    <img class="after" src="images/moody-after-3.jpg" alt="After applying the preset">
+    <div class="before-wrap">
+      <img class="before" src="images/moody-before-3.jpg" alt="Original photo before editing">
+    </div>
+    <input type="range" min="0" max="100" value="50" class="handle" aria-label="Compare before and after">
+    <span class="label label-before">Before</span>
+    <span class="label label-after">After</span>
+  </div>
+
+  <section class="buy-box">
+    <p class="price" id="pack-price">US$12</p>
+    <ul class="includes">
+      <li>20 Lightroom presets (.xmp for desktop, .dng for mobile)</li>
+      <li>Install guide (PDF)</li>
+      <li>Lifetime use on personal and client work</li>
+    </ul>
+    <!-- Replace with your Lemon Squeezy buy link for this product -->
+    <a href="https://YOUR-STORE.lemonsqueezy.com/buy/REPLACE-ME" class="btn big" id="buy-link">Buy now</a>
+    <p class="fine-print">Files are delivered by email and download link right after payment.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 YourBrand. Digital products, sales final once downloaded.</p>
+  <p><a href="#">Terms</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Refund policy</a> &middot; <a href="#">Contact</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
