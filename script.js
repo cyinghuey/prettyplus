@@ -26,5 +26,5 @@ if (pack) {
   var priceEl = document.getElementById('pack-price');
   if (titleEl) titleEl.textContent = pack.title;
   if (priceEl) priceEl.textContent = pack.price;
-  document.title = pack.title + ' | YourBrand';
+  document.title = pack.title + ' | PrettyPlus+';
 }
