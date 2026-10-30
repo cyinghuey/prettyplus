@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Prompt Packs | PrettyPlus+</title>
-  <meta name="description" content="Ready-to-use AI prompt packs for portraits, products and social content.">
+  <meta name="description" content="AI prompt packs by category: Portrait, Product, Social Media and Bundles.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,39 +12,83 @@
 <header class="site-header">
   <a href="index.html" class="logo">PrettyPlus+</a>
   <nav>
-    <a href="index.html#presets">Presets</a>
-    <a href="prompts.html">Prompts</a>
-    <a href="index.html#free">Free preset</a>
+    <a href="presets.html">Presets</a>
+    <a href="prompts.html" class="active">Prompts</a>
+    <a href="about.html">About</a>
   </nav>
 </header>
 
-<main class="product">
-  <h1>Portrait Prompt Pack</h1>
-  <p class="section-intro">30 tested prompts that produce consistent, studio-style portraits. Copy, paste, adjust.</p>
+<section class="page-title">
+  <h1>AI Prompt Packs</h1>
+  <p>Tested prompts you can copy, paste and adjust. Pick a category and swipe through.</p>
+</section>
 
-  <div class="sample-grid">
-    <img src="images/prompt-sample-1.jpg" alt="Sample output from portrait prompt 1" width="800" height="800">
-    <img src="images/prompt-sample-2.jpg" alt="Sample output from portrait prompt 2" width="800" height="800">
-    <img src="images/prompt-sample-3.jpg" alt="Sample output from portrait prompt 3" width="800" height="800">
-  </div>
+<nav class="cat-tabs" aria-label="Prompt categories">
+  <button data-target="portrait" class="active">Portrait</button>
+  <button data-target="product">Product</button>
+  <button data-target="social">Social Media</button>
+  <button data-target="pbundle">Bundle</button>
+</nav>
 
-  <section class="buy-box">
-    <p class="price">US$8</p>
-    <ul class="includes">
-      <li>30 prompts, organized by lighting and mood</li>
-      <li>Sample output and the exact prompt used for each</li>
-      <li>Quick-start guide (PDF)</li>
-    </ul>
-    <!-- Replace with your Lemon Squeezy buy link for this product -->
-    <a href="https://YOUR-STORE.lemonsqueezy.com/buy/REPLACE-PROMPTS" class="btn big">Buy now</a>
-    <p class="fine-print">Files are delivered by email and download link right after payment.</p>
+<div class="swipe-track" id="swipe-track">
+
+  <section class="swipe-panel" id="portrait">
+    <h2>Portrait</h2>
+    <div class="grid">
+      <article class="card">
+        <a href="prompt-product.html">
+          <img src="images/prompts-cover.jpg" alt="Portrait Prompt Pack preview" width="800" height="800">
+          <h3>Portrait Prompt Pack (30 prompts)</h3>
+        </a>
+        <p class="price">US$8</p>
+        <a href="prompt-product.html" class="btn small">View &amp; buy</a>
+      </article>
+    </div>
   </section>
-</main>
+
+  <section class="swipe-panel" id="product">
+    <h2>Product</h2>
+    <div class="grid">
+      <article class="card coming-soon">
+        <div class="placeholder"></div>
+        <h3>Product Prompt Pack</h3>
+        <p class="price">Coming soon</p>
+        <span class="btn small disabled">Coming soon</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="swipe-panel" id="social">
+    <h2>Social Media</h2>
+    <div class="grid">
+      <article class="card coming-soon">
+        <div class="placeholder"></div>
+        <h3>Social Media Prompt Pack</h3>
+        <p class="price">Coming soon</p>
+        <span class="btn small disabled">Coming soon</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="swipe-panel" id="pbundle">
+    <h2>Bundle</h2>
+    <div class="grid">
+      <article class="card coming-soon">
+        <div class="placeholder"></div>
+        <h3>All-in-One Prompt Bundle</h3>
+        <p class="price">Coming soon</p>
+        <span class="btn small disabled">Coming soon</span>
+      </article>
+    </div>
+  </section>
+
+</div>
 
 <footer class="site-footer">
   <p>&copy; 2026 PrettyPlus+. Digital products, sales final once downloaded.</p>
-  <p><a href="#">Terms</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Refund policy</a> &middot; <a href="#">Contact</a></p>
+  <p><a href="about.html">About</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Refund policy</a> &middot; <a href="#">Contact</a></p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
