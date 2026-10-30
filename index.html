@@ -4,38 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PrettyPlus+ | Lightroom Presets & AI Prompt Packs</title>
-  <meta name="description" content="Lightroom presets and AI prompt packs for creators. See the before and after, then buy instantly.">
+  <meta name="description" content="Lightroom presets and AI prompt packs for creators. See the before and after, then download instantly.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
   <a href="index.html" class="logo">PrettyPlus+</a>
-  <nav>
-    <a href="presets.html">Presets</a>
-    <a href="prompts.html">Prompts</a>
-    <a href="about.html">About</a>
+  <nav class="main-nav">
+    <a href="presets.html">Lightroom Presets</a>
+    <a href="prompts.html">AI Prompt Pack</a>
+    <a href="about.html">About Us</a>
+    <a href="how-it-works.html">How it works</a>
   </nav>
+  <form class="search" action="index.html" method="get" role="search">
+    <input type="search" name="q" id="search-input" placeholder="Search products" aria-label="Search products">
+  </form>
+  <a href="https://prettyplusmy.lemonsqueezy.com/billing" class="account-link">Account</a>
 </header>
 
 <section class="hero">
-  <h1>Edit like the photo was always this good.</h1>
-  <p>Lightroom presets and AI prompt packs for creators. See the before and after, then download instantly.</p>
+  <h1>Edit like the photo was<br>always this good.</h1>
+  <p>Lightroom presets and AI prompt packs for creators.<br>See the before and after, then download instantly.</p>
+
+  <div class="toggle" role="tablist" aria-label="Product type">
+    <button class="toggle-btn active" data-type="presets" role="tab">Lightroom Presets</button>
+    <button class="toggle-btn" data-type="prompts" role="tab">AI Prompts Pack</button>
+  </div>
 </section>
 
-<section class="shop-choice">
-  <a href="presets.html" class="choice-card">
-    <span class="choice-label">Shop</span>
-    <h2>Lightroom Presets</h2>
-    <p>Film, Minimal, Dark, Bright, Cafe &amp; Foodie, Vibrant Color, and Bundles.</p>
-    <span class="btn">Browse presets</span>
-  </a>
-  <a href="prompts.html" class="choice-card">
-    <span class="choice-label">Shop</span>
-    <h2>AI Prompt Packs</h2>
-    <p>Ready-to-use prompts for portraits, products, and social content.</p>
-    <span class="btn">Browse prompts</span>
-  </a>
+<section class="product-section">
+  <div class="product-grid" id="product-grid"></div>
+  <p class="no-results" id="no-results" hidden>No products match your search.</p>
 </section>
 
 <section class="free-offer" id="free">
@@ -50,8 +50,9 @@
 
 <footer class="site-footer">
   <p>&copy; 2026 PrettyPlus+. Digital products, sales final once downloaded.</p>
-  <p><a href="about.html">About</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Refund policy</a> &middot; <a href="#">Contact</a></p>
+  <p><a href="about.html">About Us</a> &middot; <a href="how-it-works.html">How it works</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Refund policy</a> &middot; <a href="#">Contact</a></p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
